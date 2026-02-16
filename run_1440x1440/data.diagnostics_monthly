@@ -1,0 +1,34 @@
+ &diagnostics_list
+#   dumpatlast = .TRUE.,
+  frequency(1) = 2635200.0,
+   fields(1:2,1) = 'THETA   ','SALT    ',
+   filename(1) = 'diags/state_3d_monthly',
+#  
+  frequency(2) = 2635200.0,
+   fields(1:2,2) = 'UVELMASS','VVELMASS',
+#                  'WVELMASS',
+   filename(2) = 'diags/trsp_3d_monthly',
+#
+  frequency(3) = 2635200.0,
+   fields(1:20,3) = 'ETAN    ','SIarea  ','SIheff  ','SIhsnow ',
+                   'DETADT2 ','PHIBOT  ','sIceLoad',
+                   'SIatmQnt','SIatmFW ','oceQnet ','oceFWflx',
+                   'oceTAUX ','oceTAUY ',
+                   'ADVxHEFF','ADVyHEFF',
+                   'ADVxSNOW','ADVySNOW',
+                   'SIuice  ','SIvice  ','ETANSQ  ',
+#                  'DFxEHEFF','DFyEHEFF',
+#                  'DFxESNOW','DFyESNOW',
+   filename(3) = 'diags/state_2d_monthly',
+#
+  frequency(4) = 2635200.0,
+   fields(1:20,4) ='EXFpreci','EXFevap ','EXFroff ','EXFempmr',
+                   'EXFswdn ','EXFlwdn ','EXFswnet','EXFlwnet','EXFqnet ',
+                   'EXFatemp','EXFaqh  ','EXFtaux ','EXFtauy ',
+                   'EXFuwind','EXFvwind','EXFpress','EXFhs   ','EXFhl   ',
+                   'EXFsnow ','EXFtidep'
+   filename(4) = 'diags/exf_zflux_monthly',
+#
+ /
+ &DIAG_STATIS_PARMS
+ /
